@@ -15,29 +15,38 @@
             <div class="d-flex flex-column">
                     <div>
                         <p class="text-white">Name</p>
-                        <span class="d-flex justify-content-around">
+                        <div class="d-flex">
                             <input type="text" name="" id="name-field">
                             <button onclick="deletData()" class="btn btn-danger mx-3">Delete Name</button>
                             <button onclick="sendData()" class="btn btn-danger">Send Name</button>
-                        </span>
+                        </div>
                     </div>
                     <div>
                         <p class="text-white">Email</p>
-                        <span class="d-flex justify-content-around">
-                            <input type="email" email="" id="">
-                            <button class="btn btn-danger mx-3">Delete Email</button>
-                            <button class="btn btn-danger">Send Email</button>
-                        </span>
+                        <div class="d-flex">
+                            <input id="email-field" type="email" email="">
+                            <div>
+                                <button onclick="emailDeletData()" class="btn btn-danger mx-3">Delete Email</button>
+                                <button onclick="emailSendData()" class="btn btn-danger">Send Email</button>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <p class="text-white">Message</p>
-                        <span class="d-flex justify-content-around">
-                            <input type="text" name="" id="">
-                            <button class="btn btn-danger mx-3">Delete Message</button>
-                            <button class="btn btn-danger">Send Message</button>
-                        </span>
+                        <div class="d-flex">
+                            <input id="message-field" type="text" name="">
+                            <div>
+                                <button onclick="messageDeletData()" class="btn btn-danger mx-3">Delete Message</button>
+                                <button onclick="messageSendData()" class="btn btn-danger">Send Message</button>
+                            </div>
+                        </div>
                     </div>
             </div>
+
+        <div class="d-flex justify-content-around mt-5">
+            <button onclick="saveButton()" class="btn btn-info">Save</button>
+            <button onclick="resetButton()" class="btn btn-warning">Reset</button>
+        </div>
         </div>
         
     </section>
