@@ -9,43 +9,39 @@
 
 </head>
 <body>
-    <section class="w-50 mt-5 m-auto d-flex justify-content-center align-items-center bg-black">
-        <div class="m-5">
+    <section class="w-75 mt-5 bg-black mx-auto">
+        <div class="m-5 p-5">
             <h1 class="text-center text-danger">Please Contact Me</h1>
-            <div class="d-flex flex-column">
-                    <div>
-                        <p class="text-white">Name</p>
+            <!-- <div class="d-flex flex-column"> -->
+                    <div class="mx-auto">
+                        <p class="text-white mb-1">Name</p>
                         <div class="d-flex">
-                            <input type="text" name="" id="name-field">
-                            <button onclick="deletData()" class="btn btn-danger mx-3">Delete Name</button>
-                            <button onclick="sendData()" class="btn btn-danger">Send Name</button>
+                            <input class="form-control w-50" type="text" name="" id="name-field" placeholder="type your name">
+                            <button onclick="deletData()" class="w-25 btn btn-danger mx-3">Delete Name</button>
+                            <button onclick="sendData()" class="w-25 btn btn-danger">Send Name</button>
                         </div>
                     </div>
-                    <div>
-                        <p class="text-white">Email</p>
+                    <div class="mt-2">
+                        <p class="text-white mb-1">Email</p>
                         <div class="d-flex">
-                            <input id="email-field" type="email" email="">
-                            <div>
-                                <button onclick="emailDeletData()" class="btn btn-danger mx-3">Delete Email</button>
-                                <button onclick="emailSendData()" class="btn btn-danger">Send Email</button>
-                            </div>
+                            <input class="form-control w-50" id="email-field" type="email" email="" placeholder="type your email">
+                            <button onclick="emailDeletData()" class="w-25 btn btn-danger mx-3">Delete Email</button>
+                            <button onclick="emailSendData()" class=" w-25 btn btn-danger">Send Email</button>
                         </div>
                     </div>
-                    <div>
-                        <p class="text-white">Message</p>
+                    <div class="mt-2">
+                        <p class="text-white mb-1">Message</p>
                         <div class="d-flex">
-                            <input id="message-field" type="text" name="">
-                            <div>
-                                <button onclick="messageDeletData()" class="btn btn-danger mx-3">Delete Message</button>
-                                <button onclick="messageSendData()" class="btn btn-danger">Send Message</button>
-                            </div>
+                            <input class="form-control w-50" id="message-field" type="text" name="" placeholder="type your message">
+                            <button onclick="messageDeletData()" class="w-25 btn btn-danger mx-3">Delete Message</button>
+                            <button onclick="messageSendData()" class="w-25 btn btn-danger">Send Message</button>
                         </div>
                     </div>
-            </div>
+            <!-- </div> -->
 
         <div class="d-flex justify-content-around mt-5">
-            <button onclick="saveButton()" class="btn btn-info">Save</button>
-            <button onclick="resetButton()" class="btn btn-warning">Reset</button>
+            <button onclick="saveButton()" class="w-25 btn btn-info">Save</button>
+            <button onclick="resetButton()" class="w-25 btn btn-warning">Reset</button>
         </div>
         </div>
         
