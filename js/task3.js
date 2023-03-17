@@ -45,16 +45,19 @@ const getPersonData = () => {
     return userInfo
 };
 
-const savedPersonData = (nameValue, emailValue, messageValue) => {
-    const userInfo  = getPersonData();
-    userInfo[nameValue] = emailValue;
-    const emaliStringify = JSON.stringify(userInfo);
-    localStorage.setItem('userInfo', emaliStringify);
-}
 
 const saveButton = () => {
     const nameValue = sendData()
     const emailValue = emailSendData()
     const messageValue = messageSendData()
-    console.log(nameValue, emailValue, messageValue)
+    savedPersonData(nameValue, emailValue, messageValue)
 };
+
+const savedPersonData = (nameValue, emailValue, messageValue) => {
+    const userInfo  = getPersonData();
+    userInfo[nameValue] = 'name';
+    userInfo[emailValue] = 'email';
+    userInfo[messageValue] = 'message';
+    const emaliStringify = JSON.stringify(userInfo);
+    localStorage.setItem('userInfo', emaliStringify);
+}
